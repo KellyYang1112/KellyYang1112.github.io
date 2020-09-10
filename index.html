@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div>Hello World</div>
+    <div id="app">
+        <div class="person" @click="toUrl('dashboard/index.html')">DashBoard</div>
+      </div>
 </body>
+<style>
+    .person {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      border: 1px solid #adadad;
+      border-radius: 5px;
+      margin: 10px;
+      background-color: #d2e9ff;
+      cursor: pointer;
+    }
+    .person:hover {
+      width: 120px;
+      height: 120px;
+      line-height: 120px;
+      background-color: #afd4f7;
+      transition: 0.3s;
+    }
+  </style>
 </html>
