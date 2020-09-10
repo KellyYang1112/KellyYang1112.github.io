@@ -12,6 +12,7 @@
         <div class="person" @click="toUrl('dashboard/index.html')">DashBoard</div>
       </div>
 </body>
+</html>
 <style>
     .person {
       width: 100px;
@@ -32,4 +33,14 @@
       transition: 0.3s;
     }
   </style>
-</html>
+  <script>
+    let vm = new Vue({
+      el: "#app",
+      methods: {
+        toUrl(url) {
+          let endpoint = url
+          window.location.href = endpoint;
+        },
+      },
+    });
+  </script>
